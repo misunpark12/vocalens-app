@@ -1,0 +1,7 @@
+{
+  "name": "보카렌즈 (Vocalens)",
+  "description": "사진을 찍으면 9개 국어 단어를 즉시 알려주는 인공지능 학습 도구",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
