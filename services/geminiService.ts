@@ -4,7 +4,9 @@ import { RecognitionResult } from "../types";
 
 export const analyzeImage = async (base64Image: string): Promise<RecognitionResult> => {
   // 시스템 규칙에 따라 process.env.API_KEY 사용
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+ const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GOOGLE_API_KEY as string
+});
   
   const prompt = `Identify the main object in this photo for a kid's learning app.
   Rules:
